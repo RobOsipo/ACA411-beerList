@@ -15,7 +15,7 @@ const Beer = (props) => {
             <h4>{props.name}</h4>
             <p>{props.info}</p>
             <p>Likes: {likes}</p>
-            <button onClick={handleLike}>Like</button>
+            <button onClick={handleLike}>Like </button>
         </>
     )
 }

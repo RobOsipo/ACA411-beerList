@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Beer from './Beer'
+import BeerCard from './BeerCard.js'
 
 
 
@@ -27,7 +27,7 @@ class App extends React.Component {
         return (
             <main>
                 {this.state.beer.map((brew) => {
-                    return <Beer key={brew.id} name={brew.name} info={brew.tagline}/>
+                    return <BeerCard key={brew.id} name={brew.name} info={brew.tagline} image={brew.image_url}/>
                 })}
             </main>
         )

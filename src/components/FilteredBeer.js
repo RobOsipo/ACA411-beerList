@@ -14,24 +14,25 @@ export default function ActionAreaCard(props) {
     function handleLike() {
         setLikes(prevState => prevState + 1)
     }
-    console.log(props.beer)
+    // console.log(props.beer[0])
   return (
     
     <Card className="main-card" sx={{ maxWidth: 345, maxHeight: 1000 }}>
+    {console.log(props.beer)}
       <CardActionArea>
         <CardMedia
           className="image"
           component="img"
           height="140"
-          image={props.image}
+          image={props.beer[0].image_url}
           alt=""
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.name}
+            {props.beer[0].name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {props.info}
+            {props.beer[0].tagline}
           </Typography>
           <Button onClick={handleLike} variant="contained">Like This Beer</Button>
           <p>Likes: {likes}</p>

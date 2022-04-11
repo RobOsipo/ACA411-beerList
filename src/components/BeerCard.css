@@ -1,7 +1,32 @@
+body {
+    background-color: gray;
+}
+
 .image {
     height: 400px;
 }
 
 .main-card {
+    margin: 20px auto;
+    border: solid lightgray 1px;
+    /* padding-bottom: 10px; */
+}
+
+.search-form > input {
+   height: 40px;
+   position: absolute;
+   left: 5px;
+   bottom: 50%;
+}
+
+.search-label {
+    position: absolute;
+    left: 1px;
+    top: 35%;
+    font-size: 1.1rem;
+}
+
+h1 {
+    width: 10rem;
     margin: 0 auto;
 }
